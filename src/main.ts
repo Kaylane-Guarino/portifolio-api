@@ -11,10 +11,8 @@ async function bootstrap() {
     credentials: true,
   });
 
-  await app.listen(
-  process.env.PORT ? parseInt(process.env.PORT, 10) : 3001,
-);
-
+  const port = parseInt(process.env.PORT || '8080', 10);
+  await app.listen(port);
 }
 
 bootstrap();
