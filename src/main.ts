@@ -9,6 +9,7 @@ async function bootstrap() {
     origin: ['http://localhost:3000', 'https://kaylane-guarino.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization', 'x-api-token'],
+    credentials: true,
   });
 
   await app.listen(process.env.PORT || 3001);
