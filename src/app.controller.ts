@@ -2,7 +2,7 @@ import { Body, Controller, Get, Post, UseGuards } from '@nestjs/common';
 import { AppService } from './app.service';
 import { ApiKeyGuard } from './api-key.guard';
 
-@Controller('email')
+@Controller('')
 export class AppController {
   constructor(private readonly emailService: AppService) {}
 
