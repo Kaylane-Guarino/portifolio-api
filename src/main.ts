@@ -7,7 +7,7 @@ async function bootstrap() {
   app.enableCors({
     origin: ['http://localhost:3000', 'https://kaylane-guarino.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization', 'x-api-token'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'x-api-key'],
     credentials: true,
   });
 
